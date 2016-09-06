@@ -1,0 +1,6 @@
+---
+- name: Install the latest version of PHP 5 via Homebrew
+  package:
+    name: homebrew/php/php56
+    state: latest
+  when: ansible_os_family == "Darwin"
